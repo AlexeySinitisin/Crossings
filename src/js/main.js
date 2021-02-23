@@ -2,7 +2,7 @@
 // import popup from  "./modules/popup.js";
 document.addEventListener("DOMContentLoaded", () => {
   'use strict';
-  function popup(e){
+  function initPopup(e){
 
     const btns = document.querySelectorAll('.btn-callBack'),
           popup = document.querySelector('.popup'),
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   
 
-  function slides(){
+  function displaySlides(){
 
     const contents = document.querySelectorAll('.park__slide-content'),
           btnsTabs = document.querySelectorAll('.park__btn'),
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   }
-  function burger(){
+  function initBurgerMenu(){
     const burgerBtn = document.querySelector('.nav__burger'),
           menu = document.querySelector('.nav__menu'),
           links = document.querySelectorAll('.nav__link > li')
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-  function showAll(selectorBtn, selectorItem, displayType){
+  function showAllItems(selectorBtn, selectorItem, displayType){
     const btn = document.querySelector(selectorBtn),
           allItem = document.querySelectorAll(selectorItem);
     btn.addEventListener('click', () =>{
@@ -147,14 +147,25 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
   }
+  function scrollTo(){
+    const anchors = document.querySelectorAll('a[href^="#"]');
+    anchors.forEach(item =>{
+      item.addEventListener("click", (e) =>{
+        e.preventDefault();
+        const blockId = item.getAttribute('href');
+        document.querySelector(`${blockId}`).scrollIntoView({block: "start", behavior: "smooth"});
+      });
+    });
+  }
 
+  scrollTo();
   consentCheck('#checkbox', ".form__btn-popup");
   consentCheck('#checkbox-page', '.form__btn-pages');
-  showAll(".cost__allItem", ".cost__item", "flex");
-  showAll(".review__All-btn", ".review__item", "block");
-  burger();
-  popup();
-  slides();
+  showAllItems(".cost__allItem", ".cost__item", "flex");
+  showAllItems(".review__All-btn", ".review__item", "block");
+  initBurgerMenu();
+  initPopup();
+  displaySlides();
   readMore();
   consentCheck();
 });

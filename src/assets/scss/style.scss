@@ -15,7 +15,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    position: relative;
+}
 .header {
     background-image: url("../img/Fon_header.png");
     background-repeat: no-repeat;
@@ -809,7 +811,32 @@
 .btn__off {
     background: #474A51;
 }
+//  truck
 
+.scroll__truck{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom:70px;
+    right: 70px;
+    cursor: pointer;
+    background:rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    box-shadow:0 0 10px 5px rgb(212, 212, 212);
+    justify-content: center;
+    align-items:center;
+}
+.scroll__truck > a > img{
+    width: 40px;
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.truck_fire{
+    display: none;
+}
 /* Large devices (large desktops, 1200px) */
 @media (max-width: 1200px) {
 
