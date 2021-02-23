@@ -741,6 +741,9 @@
     z-index: 2;
     // display: flex;
     align-items: center;
+    form{
+        display: block;
+    }
 }
 
 .order__close {
@@ -1310,12 +1313,12 @@
 
     .nav__burger_active::after {
         top: 9px;
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
     }
 
     .nav__burger_active::before {
         top: 9px;
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
     }
 
     .nav__menu_mobile {

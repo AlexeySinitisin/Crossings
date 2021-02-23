@@ -100,24 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   }
-  function consentCheck(){
-    const checkbox = document.querySelector('#checkbox'),
-          btnPopup = document.querySelector(".form__btn-popup"),
-          checkboxPage = document.querySelector('#checkbox-page'),
-          btnPages = document.querySelector('.form__btn-pages');
-
-    checkbox.addEventListener('click', ()=>{
-      if(checkbox.checked){
-        btnPopup.disabled = false;
-        btnPopup.classList.remove('btn__off');
-      }else{
-        btnPopup.disabled = true;
-        btnPopup.classList.add('btn__off');
-      }
-    })
-
-  }
-
   function burger(){
     const burgerBtn = document.querySelector('.nav__burger'),
           menu = document.querySelector('.nav__menu'),
@@ -150,7 +132,24 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.remove();
     }); 
   }
+  function consentCheck(selectorChekbox, selectorBtn){
+    const checkbox = document.querySelector(selectorChekbox),
+          btnPopup = document.querySelector(selectorBtn);
 
+    checkbox.addEventListener('click', ()=>{
+      if(checkbox.checked){
+        btnPopup.disabled = false;
+        btnPopup.classList.remove('btn__off');
+      }else{
+        btnPopup.disabled = true;
+        btnPopup.classList.add('btn__off');
+      }
+    })
+
+  }
+
+  consentCheck('#checkbox', ".form__btn-popup");
+  consentCheck('#checkbox-page', '.form__btn-pages');
   showAll(".cost__allItem", ".cost__item", "flex");
   showAll(".review__All-btn", ".review__item", "block");
   burger();
