@@ -131,7 +131,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 104px;
 }
 
 .box__title {
@@ -202,7 +201,6 @@
 
 .cost__content {
   justify-content: center;
-  margin-bottom: 102px;
 }
 
 .cost__title {
