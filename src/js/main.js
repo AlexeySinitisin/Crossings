@@ -118,6 +118,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
+  function burger(){
+    const burgerBtn = document.querySelector('.nav__burger'),
+          menu = document.querySelector('.nav__menu'),
+          links = document.querySelectorAll('.nav__link > li')
+    burgerBtn.addEventListener('click', ()=>{
+      burgerBtn.classList.toggle('nav__burger_active');
+      menu.classList.toggle('nav__menu_mobile');
+      if(burgerBtn.classList.contains('nav__burger_active')){
+        document.body.style.overflow = "hidden";
+      }else{
+        document.body.style.overflow = "";
+      }
+    });
+
+    links.forEach(item =>{
+      item.addEventListener('click', () =>{
+        burgerBtn.classList.remove('nav__burger_active');
+        menu.classList.remove('nav__menu_mobile');
+        document.body.style.overflow = "";
+      });
+    });
+  }
+  function showAll(selectorBtn, selectorItem, displayType){
+    const btn = document.querySelector(selectorBtn),
+          allItem = document.querySelectorAll(selectorItem);
+    btn.addEventListener('click', () =>{
+      allItem.forEach(item =>{
+        item.style.display = `${displayType}`;
+      });
+      btn.remove();
+    }); 
+  }
+
+  showAll(".cost__allItem", ".cost__item", "flex");
+  showAll(".review__All-btn", ".review__item", "block");
+  burger();
   popup();
   slides();
   readMore();
