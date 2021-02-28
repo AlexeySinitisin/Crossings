@@ -584,13 +584,13 @@ body{
     transition-duration: 0.5s;
 }
 .form__btn:hover{
-    transform: scale(1.1);
+    background:#FED100;
     transition-duration: 0.5s;
-    z-index: 3;
+    color: #000000;
 }
 .form__btn:hover>.form__btn_border-orange::after{
-    transform: none;
-    z-index: -5;
+    background:#FF352B;
+    transition-duration: 0.5s
 }
 .form__btn:active {
     transform: translate(10px, 10px);
@@ -882,9 +882,7 @@ ali
 .show{
     display: block;
 }
-.flex{
-    display: block;
-}
+
 
 /* Large devices (large desktops, 1200px) */
 @media (max-width: 1200px) {

@@ -685,14 +685,14 @@ body {
 }
 
 .form__btn:hover {
-  transform: scale(1.1);
+  background: #FED100;
   transition-duration: 0.5s;
-  z-index: 3;
+  color: #000000;
 }
 
 .form__btn:hover > .form__btn_border-orange::after {
-  transform: none;
-  z-index: -5;
+  background: #FF352B;
+  transition-duration: 0.5s;
 }
 
 .form__btn:active {
@@ -995,10 +995,6 @@ ali .form__text {
 }
 
 .show {
-  display: block;
-}
-
-.flex {
   display: block;
 }
 
