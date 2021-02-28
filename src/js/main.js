@@ -157,7 +157,30 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+  function ScrollUp(){
+    const truck = document.querySelector('.truck'),
+          btn = document.querySelector('.ScrollUp'),
+          truckWithFire = document.querySelector('.truck_fire');
+    
+    btn.addEventListener("click", () =>{
+      truck.classList.remove('show');
+      truck.classList.add('hide');
+      truckWithFire.classList.add('show');
+    })
 
+    window.addEventListener('scroll', ()=>{
+      let scroll = window.pageYOffset;
+      if(scroll > 1000){
+        btn.classList.add('show');
+      }else{
+        btn.classList.remove('show');
+        truckWithFire.classList.remove('show');
+        truck.classList.add('show');
+        truckWithFire.classList.add('hide');
+      }
+    });
+  }
+  ScrollUp();
   scrollTo();
   consentCheck('#checkbox', ".form__btn-popup");
   consentCheck('#checkbox-page', '.form__btn-pages');
