@@ -734,7 +734,7 @@ body {
   right: 0;
 }
 
-ali .form__text {
+.form__text {
   line-height: 15px;
   font-family: Montserrat;
   font-style: normal;
@@ -1048,6 +1048,12 @@ ali .form__text {
 .order-form .form__phone {
     margin-right: 40px;
     width: 240px;
+  }
+
+  .ScrollUp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
   }
 }
 /* Small devices (tablets, 768px) */
@@ -1587,5 +1593,11 @@ ali .form__text {
 
   .box__num {
     margin-right: 25px;
+  }
+
+  .ScrollUp {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
   }
 }

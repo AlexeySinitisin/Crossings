@@ -375,9 +375,7 @@ body {
 }
 
 .park__slide-content {
-
     display: none;
-
     img {
         width: 641px;
         height: 440px;
@@ -456,7 +454,6 @@ body {
     margin-bottom: 94px;
     padding-right: 10px;
     padding-left: 10px;
-
 }
 
 .review__title {
@@ -472,12 +469,10 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
-
 }
 
 .review__item {
     width: 32.21%;
-
 }
 
 .review__item-name {
@@ -645,7 +640,7 @@ body {
     right: 0;
 }
 
-ali .form__text {
+.form__text {
     line-height: 15px;
     @include normalFont(12px, normal);
     color: #333333;
@@ -653,14 +648,12 @@ ali .form__text {
     margin-right: 0;
     text-align: right;
     display: flex;
-
 }
 
 .form__checkbox {
     margin-right: 10px;
     justify-content: flex-end;
 }
-
 
 // Section map
 
@@ -695,15 +688,12 @@ ali .form__text {
     text-decoration: none;
     line-height: 37px;
     @include normalFont(30px, 600);
-
 }
 
 .privacy__link a {
     text-decoration: none;
     @include normalFont(16px, normal);
     line-height: 21px;
-
-
 }
 
 .privacy__link {
@@ -733,7 +723,6 @@ ali .form__text {
 .footer__networks {
     display: flex;
     flex-direction: column;
-
 }
 
 .footer__networks-link {
@@ -754,8 +743,6 @@ ali .form__text {
     flex-direction: column;
     justify-content: flex-start;
 }
-
-
 
 .footer__callback-btn {
     line-height: 24px;
@@ -918,7 +905,6 @@ ali .form__text {
 /* Large devices (large desktops, 1200px) */
 @media (max-width: 1200px) {
 
-
     .park__slide-content img {
         width: 427px;
         height: 266px;
@@ -957,12 +943,16 @@ ali .form__text {
     }
 
     .order-form {
-
         .form__name,
         .form__phone {
             margin-right: 40px;
             width: 240px;
         }
+    }
+    .ScrollUp {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
     }
 }
 
@@ -1016,13 +1006,11 @@ ali .form__text {
         outline-offset: 0;
         border: none;
         color: #F2F2F2;
-
     }
 
     .subheader__text h1 {
         text-align: center;
         @include normalFont(28px, bold);
-
     }
 
     .subheader {
@@ -1032,7 +1020,6 @@ ali .form__text {
     .subheader__text {
         display: flex;
         flex-direction: column;
-
         align-items: center;
     }
 
@@ -1116,7 +1103,6 @@ ali .form__text {
     .cost__title {
         @include normalFont(24px, 600);
         line-height: 34px;
-
     }
 
     .cost__subtitle {
@@ -1188,8 +1174,6 @@ ali .form__text {
 
     // section park
 
-
-
     .park__container {
         margin-top: 20px;
     }
@@ -1205,7 +1189,6 @@ ali .form__text {
     .park__title {
         @include normalFont(20px, 600);
         line-height: 24px;
-
     }
 
     .park__subtitle {
@@ -1323,11 +1306,9 @@ ali .form__text {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .order-form {
-
         .form__name,
         .form__phone {
             margin-right: 0px;
@@ -1463,7 +1444,6 @@ ali .form__text {
     .nav__link>li>a {
         @include normalFont(24px, 600);
     }
-
 }
 
 @media (max-width: 500px) {
@@ -1473,5 +1453,10 @@ ali .form__text {
 
     .box__num {
         margin-right: 25px;
+    }
+    .ScrollUp {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
     }
 }
