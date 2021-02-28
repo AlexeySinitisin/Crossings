@@ -64,8 +64,12 @@ body {
   margin: 0 auto;
 }
 
-.menu__link:hover, .header__contact > a:hover, .footer__email:hover, .header__contact:hover,
-.privacy__title > a:hover, .privacy__link > a:hover {
+.menu__link:hover,
+.header__contact > a:hover,
+.footer__email:hover,
+.header__contact:hover,
+.privacy__title > a:hover,
+.privacy__link > a:hover {
   color: #FF352B;
 }
 
@@ -316,12 +320,14 @@ body {
   margin-bottom: 50px;
 }
 
-.cost__btn, .park__btn-order {
+.cost__btn,
+.park__btn-order {
   transition-property: background-color, color;
   transition-duration: 0.3s;
 }
 
-.cost__btn:hover, .park__btn-order:hover {
+.cost__btn:hover,
+.park__btn-order:hover {
   background-color: #000000;
   color: #FED100;
   transition-duration: 0.3s;
@@ -605,11 +611,13 @@ body {
   margin: auto;
 }
 
-.review__All-btn, .footer__callback-btn {
+.review__All-btn,
+.footer__callback-btn {
   transition-duration: 0.5s;
 }
 
-.review__All-btn:hover, .footer__callback-btn:hover {
+.review__All-btn:hover,
+.footer__callback-btn:hover {
   transition-duration: 0.5s;
   border: 2px solid #FF352B;
   background: #FF352B;
@@ -1036,7 +1044,8 @@ ali .form__text {
     width: 350px;
   }
 
-  .order-form .form__name, .order-form .form__phone {
+  .order-form .form__name,
+.order-form .form__phone {
     margin-right: 40px;
     width: 240px;
   }
@@ -1437,7 +1446,8 @@ ali .form__text {
     align-items: center;
   }
 
-  .order-form .form__name, .order-form .form__phone {
+  .order-form .form__name,
+.order-form .form__phone {
     margin-right: 0px;
     width: 250px;
   }

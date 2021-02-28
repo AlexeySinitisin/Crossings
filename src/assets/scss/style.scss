@@ -15,9 +15,11 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     position: relative;
 }
+
 .header {
     background-image: url("../img/Fon_header.png");
     background-repeat: no-repeat;
@@ -66,8 +68,13 @@ body{
     justify-content: space-between;
     margin: 0 auto;
 }
-.menu__link:hover, .header__contact > a:hover, .footer__email:hover, .header__contact:hover, 
-.privacy__title > a:hover, .privacy__link > a:hover{
+
+.menu__link:hover,
+.header__contact>a:hover,
+.footer__email:hover,
+.header__contact:hover,
+.privacy__title>a:hover,
+.privacy__link>a:hover {
     color: #FF352B;
 }
 
@@ -106,11 +113,13 @@ body{
     right: 23px;
     transition: 0.5s;
 }
-.subheader__call:hover{
+
+.subheader__call:hover {
     transform: scale(1.1);
     cursor: pointer;
     transition: 0.5s;
 }
+
 .subheader__icons {
     margin-top: calc(186/1080*100%);
     display: flex;
@@ -265,15 +274,20 @@ body{
     background: #FED100;
     margin-bottom: 50px;
 }
-.cost__btn, .park__btn-order{
+
+.cost__btn,
+.park__btn-order {
     transition-property: background-color, color;
     transition-duration: 0.3s;
 }
-.cost__btn:hover, .park__btn-order:hover{
-    background-color:#000000;
-    color:#FED100;
+
+.cost__btn:hover,
+.park__btn-order:hover {
+    background-color: #000000;
+    color: #FED100;
     transition-duration: 0.3s;
 }
+
 // section park
 .park {
     margin-top: 102px;
@@ -517,15 +531,20 @@ body{
     background: transparent;
     margin: auto;
 }
-.review__All-btn, .footer__callback-btn{
+
+.review__All-btn,
+.footer__callback-btn {
     transition-duration: 0.5s;
 }
-.review__All-btn:hover, .footer__callback-btn:hover{
+
+.review__All-btn:hover,
+.footer__callback-btn:hover {
     transition-duration: 0.5s;
     border: 2px solid #FF352B;
     background: #FF352B;
     color: #EBEBEB;
 }
+
 //section ORDER_FORM
 
 .order-form__content {
@@ -583,15 +602,18 @@ body{
     color: #F2F2F2;
     transition-duration: 0.5s;
 }
-.form__btn:hover{
-    background:#FED100;
+
+.form__btn:hover {
+    background: #FED100;
     transition-duration: 0.5s;
     color: #000000;
 }
-.form__btn:hover>.form__btn_border-orange::after{
-    background:#FF352B;
+
+.form__btn:hover>.form__btn_border-orange::after {
+    background: #FF352B;
     transition-duration: 0.5s
 }
+
 .form__btn:active {
     transform: translate(10px, 10px);
 }
@@ -622,8 +644,8 @@ body{
     position: absolute;
     right: 0;
 }
-ali
-.form__text {
+
+ali .form__text {
     line-height: 15px;
     @include normalFont(12px, normal);
     color: #333333;
@@ -775,7 +797,8 @@ ali
     z-index: 2;
     // display: flex;
     align-items: center;
-    form{
+
+    form {
         display: block;
     }
 }
@@ -800,9 +823,11 @@ ali
     background-color: rgb(255, 255, 255, 1);
     margin: auto;
     z-index: 3;
-    .form__box{
+
+    .form__box {
         position: static;
     }
+
     .form__name,
     .form__phone {
         display: block;
@@ -843,43 +868,49 @@ ali
 .btn__off {
     background: #474A51;
 }
+
 //  truck
 
-.ScrollUp{
+.ScrollUp {
     position: fixed;
-    bottom:70px;
+    bottom: 70px;
     right: 70px;
     cursor: pointer;
     display: none;
-    align-items:center;
+    align-items: center;
     transition-duration: 0.5s;
 }
-.ScrollUp:hover{
+
+.ScrollUp:hover {
     transition-duration: 0.5s;
     transform: scale(1.2);
 }
-.ScrollUp > .truck img{
-    background:rgb(255, 255, 255);
+
+.ScrollUp>.truck img {
+    background: rgb(255, 255, 255);
     border-radius: 30px;
-    box-shadow:0 0 10px 5px rgb(212, 212, 212);
+    box-shadow: 0 0 10px 5px rgb(212, 212, 212);
     justify-content: center;
     display: flex;
     width: 60px;
     padding: 10px;
-    height: 60px; 
+    height: 60px;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-.truck_fire{
+
+.truck_fire {
     display: none;
     width: 60px;
     height: 80px;
 }
-.hide{
+
+.hide {
     display: none;
 }
-.show{
+
+.show {
     display: block;
 }
 
@@ -897,12 +928,14 @@ ali
         padding-left: 10px;
         padding-right: 10px;
     }
-    form{
+
+    form {
         padding-left: 20px;
         padding-right: 20px;
         display: flex;
         justify-content: space-between;
     }
+
     .form__name,
     .form__phone {
         width: 250px;
@@ -922,8 +955,11 @@ ali
     .nav__menu {
         width: 350px;
     }
-    .order-form{
-        .form__name, .form__phone{
+
+    .order-form {
+
+        .form__name,
+        .form__phone {
             margin-right: 40px;
             width: 240px;
         }
@@ -1239,9 +1275,11 @@ ali
         flex-direction: column;
         margin: 40px 0 40px;
     }
-    .review__title{
+
+    .review__title {
         margin-top: 30px;
     }
+
     .review__item {
         margin-bottom: 20px;
         width: auto;
@@ -1254,9 +1292,11 @@ ali
     .review__item:nth-child(3) {
         display: none;
     }
-    .review__content{
+
+    .review__content {
         margin-bottom: 30px;
     }
+
     //section ORDER_FORM
 
     .order-form__content {
@@ -1283,11 +1323,13 @@ ali
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+
     }
 
-    .order-form{
-        .form__name, .form__phone{
+    .order-form {
+
+        .form__name,
+        .form__phone {
             margin-right: 0px;
             width: 250px;
         }
