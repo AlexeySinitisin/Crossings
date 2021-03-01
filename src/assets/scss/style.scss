@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @mixin normalFont($size, $weight) {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: $weight;
     font-size: $size;
@@ -77,7 +76,9 @@ body {
 .privacy__link>a:hover {
     color: #FF352B;
 }
-
+.header__contact{
+    text-align: center;
+}
 .menu__link {
     text-decoration: none;
     @include normalFont(18px, 500)
@@ -256,9 +257,11 @@ body {
 .cost__item-text {
     @include normalFont(16px, normal);
     line-height: 21px;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
-
+.cost__item-text:nth-child(4){
+    padding-bottom: 0px;
+}
 .cost__price {
     margin-top: 64px;
     @include normalFont(30px, 600);

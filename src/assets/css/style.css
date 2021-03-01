@@ -42,7 +42,6 @@ body {
 }
 
 .nav__logo {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
@@ -73,9 +72,12 @@ body {
   color: #FF352B;
 }
 
+.header__contact {
+  text-align: center;
+}
+
 .menu__link {
   text-decoration: none;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -83,7 +85,6 @@ body {
 }
 
 .header__contact a {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -97,7 +98,6 @@ body {
 }
 
 .subheader__text h1 {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 70px;
@@ -110,7 +110,6 @@ body {
 }
 
 .subheader__text h2 {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -154,7 +153,6 @@ body {
 }
 
 .box__title {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -179,7 +177,6 @@ body {
 }
 
 .box__item-title {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -189,7 +186,6 @@ body {
 
 .box__text {
   margin-top: 15px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -199,7 +195,6 @@ body {
 
 .box__num {
   display: flex;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
@@ -224,7 +219,6 @@ body {
 }
 
 .cost__title {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -236,7 +230,6 @@ body {
 }
 
 .cost__subtitle {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -277,7 +270,6 @@ body {
 
 .cost__item-title {
   margin-top: 84px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -287,18 +279,20 @@ body {
 }
 
 .cost__item-text {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   color: black;
   line-height: 21px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+.cost__item-text:nth-child(4) {
+  padding-bottom: 0px;
 }
 
 .cost__price {
   margin-top: 64px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -310,7 +304,6 @@ body {
 .cost__btn {
   width: 250px;
   height: 50px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -364,7 +357,6 @@ body {
 }
 
 .park__title {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -375,7 +367,6 @@ body {
 }
 
 .park__subtitle {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -401,7 +392,6 @@ body {
 
 .park__btn {
   line-height: 24px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -449,7 +439,6 @@ body {
 }
 
 .park__slide-title {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -482,7 +471,6 @@ body {
 
 .park__btn-order {
   line-height: 24px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -517,7 +505,6 @@ body {
 }
 
 .review__title {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -540,7 +527,6 @@ body {
 }
 
 .review__item-name {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -555,7 +541,6 @@ body {
 }
 
 .review__item-data {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -572,7 +557,6 @@ body {
 }
 
 .review__item-text {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -584,7 +568,6 @@ body {
 .review__btn-more {
   text-decoration: underline;
   cursor: pointer;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -594,7 +577,6 @@ body {
 
 .review__All-btn {
   line-height: 24px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -634,7 +616,6 @@ body {
 
 .order-form__title {
   line-height: 37px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -644,7 +625,6 @@ body {
 
 .order-form__subtitle {
   line-height: 21px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -680,7 +660,6 @@ body {
   height: 50px;
   background: #FF352B;
   line-height: 24px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -736,7 +715,6 @@ body {
 
 .form__text {
   line-height: 15px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -781,7 +759,6 @@ body {
 .privacy__title a {
   text-decoration: none;
   line-height: 37px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -790,7 +767,6 @@ body {
 
 .privacy__link a {
   text-decoration: none;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -814,7 +790,6 @@ body {
 
 .footer__menu ul li a {
   text-decoration: none;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -840,7 +815,6 @@ body {
 }
 
 .footer__email {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -856,7 +830,6 @@ body {
 
 .footer__callback-btn {
   line-height: 24px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -873,7 +846,6 @@ body {
 }
 
 .footer__callback a {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -1071,7 +1043,6 @@ body {
   }
 
   .nav__logo {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -1086,7 +1057,6 @@ body {
 
   .menu__link {
     text-decoration: none;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1094,7 +1064,6 @@ body {
   }
 
   .header__contact a {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1122,7 +1091,6 @@ body {
 
   .subheader__text h1 {
     text-align: center;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -1140,7 +1108,6 @@ body {
   }
 
   .subheader__text h2 {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -1178,7 +1145,6 @@ body {
   }
 
   .box__title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -1205,7 +1171,6 @@ body {
   }
 
   .box__item-title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1222,7 +1187,6 @@ body {
   }
 
   .cost__title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -1267,7 +1231,6 @@ body {
 
   .cost__item-title {
     margin-top: 40px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1278,7 +1241,6 @@ body {
 
   .cost__price {
     margin-top: 40px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
@@ -1297,7 +1259,6 @@ body {
 
   .cost__allItem {
     display: flex;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1321,7 +1282,6 @@ body {
   }
 
   .park__title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -1340,7 +1300,6 @@ body {
 
   .park__btn {
     line-height: 20px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1427,7 +1386,6 @@ body {
   .order-form__title {
     text-align: center;
     line-height: 24px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -1437,7 +1395,6 @@ body {
   .order-form__subtitle {
     text-align: center;
     line-height: 20px;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1579,7 +1536,6 @@ body {
   }
 
   .nav__link > li > a {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
